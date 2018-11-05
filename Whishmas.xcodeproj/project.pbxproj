@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C98BCA5F20A0389F00892C28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BCA5E20A0389F00892C28 /* AppDelegate.swift */; };
-		C98BCA6120A0389F00892C28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BCA6020A0389F00892C28 /* ViewController.swift */; };
 		C98BCA6420A0389F00892C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98BCA6220A0389F00892C28 /* Main.storyboard */; };
-		C98BCA6620A038A100892C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98BCA6520A038A100892C28 /* Assets.xcassets */; };
 		C98BCA6920A038A100892C28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98BCA6720A038A100892C28 /* LaunchScreen.storyboard */; };
+		C98BCA7620A0415E00892C28 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BCA7520A0415E00892C28 /* ListViewController.swift */; };
+		C98BCA7C20A0417E00892C28 /* ToyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BCA7B20A0417E00892C28 /* ToyViewController.swift */; };
+		C98BCA8220A041C500892C28 /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BCA8120A041C500892C28 /* Toy.swift */; };
+		C98BCA8620A041F900892C28 /* ToyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98BCA8520A041F900892C28 /* ToyService.swift */; };
+		C98BCA8A20A0484A00892C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98BCA8920A0484A00892C28 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C98BCA5B20A0389F00892C28 /* Whishmas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whishmas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98BCA5E20A0389F00892C28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C98BCA6020A0389F00892C28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C98BCA6320A0389F00892C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C98BCA6520A038A100892C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C98BCA6820A038A100892C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C98BCA6A20A038A100892C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C98BCA7520A0415E00892C28 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C98BCA7B20A0417E00892C28 /* ToyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyViewController.swift; sourceTree = "<group>"; };
+		C98BCA8120A041C500892C28 /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
+		C98BCA8520A041F900892C28 /* ToyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyService.swift; sourceTree = "<group>"; };
+		C98BCA8920A0484A00892C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		C98BCA5D20A0389F00892C28 /* Whishmas */ = {
 			isa = PBXGroup;
 			children = (
+				C98BCA7220A0412100892C28 /* Model */,
+				C98BCA7120A0411C00892C28 /* View */,
+				C98BCA7420A0412F00892C28 /* Controller */,
+				C98BCA7020A03CDE00892C28 /* Supporting Files */,
+			);
+			path = Whishmas;
+			sourceTree = "<group>";
+		};
+		C98BCA7020A03CDE00892C28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C98BCA8920A0484A00892C28 /* Assets.xcassets */,
 				C98BCA5E20A0389F00892C28 /* AppDelegate.swift */,
-				C98BCA6020A0389F00892C28 /* ViewController.swift */,
-				C98BCA6220A0389F00892C28 /* Main.storyboard */,
-				C98BCA6520A038A100892C28 /* Assets.xcassets */,
 				C98BCA6720A038A100892C28 /* LaunchScreen.storyboard */,
 				C98BCA6A20A038A100892C28 /* Info.plist */,
 			);
-			path = Whishmas;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C98BCA7120A0411C00892C28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C98BCA6220A0389F00892C28 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C98BCA7220A0412100892C28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C98BCA8120A041C500892C28 /* Toy.swift */,
+				C98BCA8520A041F900892C28 /* ToyService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C98BCA7420A0412F00892C28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C98BCA7520A0415E00892C28 /* ListViewController.swift */,
+				C98BCA7B20A0417E00892C28 /* ToyViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					C98BCA5A20A0389F00892C28 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -122,8 +164,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98BCA8A20A0484A00892C28 /* Assets.xcassets in Resources */,
 				C98BCA6920A038A100892C28 /* LaunchScreen.storyboard in Resources */,
-				C98BCA6620A038A100892C28 /* Assets.xcassets in Resources */,
 				C98BCA6420A0389F00892C28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C98BCA6120A0389F00892C28 /* ViewController.swift in Sources */,
+				C98BCA8220A041C500892C28 /* Toy.swift in Sources */,
+				C98BCA7620A0415E00892C28 /* ListViewController.swift in Sources */,
+				C98BCA8620A041F900892C28 /* ToyService.swift in Sources */,
 				C98BCA5F20A0389F00892C28 /* AppDelegate.swift in Sources */,
+				C98BCA7C20A0417E00892C28 /* ToyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +326,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Whishmas/Info.plist;
+				DEVELOPMENT_TEAM = 9T22T3H63N;
+				INFOPLIST_FILE = "$(SRCROOT)/Whishmas/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.Whishmas;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.t8lv4.Whishmas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -298,14 +344,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Whishmas/Info.plist;
+				DEVELOPMENT_TEAM = 9T22T3H63N;
+				INFOPLIST_FILE = "$(SRCROOT)/Whishmas/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.Whishmas;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.t8lv4.Whishmas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
